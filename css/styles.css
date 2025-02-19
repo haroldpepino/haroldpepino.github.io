@@ -1,0 +1,101 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Fixed Vertical Navigation Bar */
+nav {
+    position: fixed; /* Fixes the navbar to the left side */
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height */
+    width: 200px; /* Set the width of the navbar */
+    background-color: #4C5B61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the logo and links vertically */
+    align-items: center;
+    padding-top: 20px; /* Add padding at the top */
+    z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+/* Logo Styles */
+nav .logo {
+    text-align: center;
+    margin-bottom: 40px; /* Space between logo and links */
+}
+
+nav .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the logo circular */
+    margin-bottom: 10px;
+}
+
+nav .logo h1 {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* Navigation Links */
+nav .nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+nav .nav-links li {
+    margin: 20px 0;
+}
+
+nav .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+    color: #f39c12;
+}
+
+/* Sections Styling */
+section {
+    padding: 80px 20px; /* Padding to avoid overlap with the fixed navbar */
+    margin-left: 220px; /* Push content to the right to avoid navbar overlap */
+}
+
+h2 {
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        width: 100%; /* Full width on smaller screens */
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav .logo {
+        margin: 0;
+    }
+
+    nav .nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav .nav-links li {
+        margin: 0 10px;
+    }
+}
