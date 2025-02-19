@@ -39,10 +39,7 @@ nav .logo img {
     margin-bottom: 10px;
 }
 
-nav .logo h1 {
-    color: #fff;
-    font-size: 22px;
-}
+
 
 /* Navigation Links */
 nav .nav-links {
@@ -62,7 +59,7 @@ nav .nav-links li a {
 }
 
 nav .nav-links li a:hover {
-    color: #f39c12;
+    color: #B8E0D2;
 }
 
 /* Sections Styling */
@@ -70,9 +67,17 @@ section {
     padding: 80px 20px; /* Padding to avoid overlap with the fixed navbar */
     margin-left: 220px; /* Push content to the right to avoid navbar overlap */
 }
-
+h1, .h1 {
+    font-size: calc(1.725rem + 5.7vw);
+  }
+  @media (min-width: 1200px) {
+    h1, .h1 {
+      font-size: 6rem;
+    }
+    
+  }
 h2 {
-    color: #333;
+    color: #4C5B61;
 }
 
 /* Responsive Design */
